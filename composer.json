@@ -1,0 +1,15 @@
+{
+    "name": "weprovide/aviate",
+    "description": "Connector class for Aviate compiler",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {"WeProvide\\Aviate\\": "."}
+    },
+    "authors": [
+        {
+            "name": "Tim Neutkens",
+            "email": "tim@weprovide.com"
+        }
+    ],
+    "require": {}
+}
