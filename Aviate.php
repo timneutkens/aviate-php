@@ -20,7 +20,13 @@ abstract class Aviate {
             return $this->hostUrl;
         }
 
-        $this->hostUrl = file_get_contents($this->getProjectRoot() . '/.aviate/host.txt');
+        $file = $this->getProjectRoot() . '/.aviate/host.txt';
+
+        if(!file_exists($file)) {
+            throw new Exception('.aviate/host.txt not found. Please run `npm run dev` in your project root.');
+        }
+
+        $this->hostUrl = file_get_contents($file);
         return $this->hostUrl;
     }
 
