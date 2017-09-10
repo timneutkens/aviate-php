@@ -19,7 +19,7 @@ use WeProvide\Aviate\Aviate;
 class Bridge extends Aviate {
     // Required function for you to implement. This should return the directory that has the aviate.config.js
     public function getProjectRoot(): string {
-        return '/your-directory'
+        return '/your-directory';
     }
 
     // Used for convience / demonstration. This is not required
