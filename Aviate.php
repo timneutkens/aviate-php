@@ -1,6 +1,8 @@
 <?php
 namespace WeProvide\Aviate;
 
+use Exception;
+
 abstract class Aviate {
     protected $hostUrl;
 
